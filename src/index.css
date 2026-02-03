@@ -105,17 +105,27 @@ body {
 
 /* Glassmorphism - Tarjetas orgánicas */
 .glass-card {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
+  /* Bordes con efecto de luz */
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 32px;
+  /* Sombras profundas para flotación */
+  box-shadow: 
+    0 4px 6px -1px rgba(47, 133, 90, 0.05),
+    0 10px 15px -3px rgba(47, 133, 90, 0.1);
   transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 25px 50px -12px rgba(47, 133, 90, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 
+    0 10px 20px -5px rgba(47, 133, 90, 0.1),
+    0 25px 50px -12px rgba(47, 133, 90, 0.2);
   transform: translateY(-8px);
 }
 

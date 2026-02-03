@@ -33,7 +33,7 @@ const Hero = () => {
               Donde la{' '}
               <span className="text-gradient">Seguridad</span>
               {' '}se une al{' '}
-              <span className="text-gradient">Aprendizaje Natural</span>
+              <span className="font-serif italic font-light text-forest">Aprendizaje Natural</span>
             </motion.h1>
 
             <motion.p

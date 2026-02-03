@@ -52,11 +52,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicios" className="section-padding relative overflow-hidden bg-gradient-to-b from-cream via-white to-green-50/30">
-      {/* Formas orgánicas de fondo */}
-      <div className="absolute top-20 left-0 w-96 h-96 bg-forest/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-0 w-96 h-96 bg-green-400/5 rounded-full blur-3xl"></div>
-
+    <section id="servicios" className="section-padding relative overflow-hidden bg-forest text-cream">
+      
+      {/* Decoración de fondo sutil */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-400/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-orange-300/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      
       <div className="container-custom relative z-10">
         <motion.div
           ref={ref}
@@ -65,13 +67,13 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-forest/10 text-forest font-semibold text-sm mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-green-200 border border-white/10 font-semibold text-sm mb-4 backdrop-blur-md">
             Nuestros Servicios
           </span>
-          <h2 className="font-serif text-5xl lg:text-6xl font-bold text-charcoal mb-6">
-            Experiencia <span className="text-gradient">Premium</span> Integral
+          <h2 className="font-serif text-5xl lg:text-6xl font-bold text-white mb-6">
+            Experiencia <span className="text-green-300 italic">Premium</span> Integral
           </h2>
-          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <p className="text-xl text-green-100/80 max-w-3xl mx-auto">
             Combinamos seguridad de clase mundial con una metodología de aprendizaje que respeta y potencia el desarrollo natural de cada niño
           </p>
         </motion.div>
@@ -80,42 +82,35 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.15 * index }}
-              className="glass-card p-8 group"
+              transition={{ duration: 0.6, delay: 0.1 * index }}
+              className="group p-8 rounded-[40px] border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2"
             >
               <div className="flex items-start space-x-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-forest to-green-600 rounded-3xl flex items-center justify-center text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-500">
+                <div className="w-16 h-16 bg-green-400/20 text-green-300 rounded-2xl flex items-center justify-center flex-shrink-0">
                   {service.icon}
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl font-bold text-charcoal mb-1">
+                  <h3 className="font-serif text-2xl font-bold text-white mb-1">
                     {service.title}
                   </h3>
-                  <p className="text-forest font-semibold">{service.subtitle}</p>
+                  <p className="text-green-300 font-medium">{service.subtitle}</p>
                 </div>
               </div>
 
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-green-100/70 leading-relaxed mb-6">
                 {service.description}
               </p>
 
-              <div className="space-y-2">
+              <div className="space-y-3 pt-6 border-t border-white/10">
                 {service.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center space-x-2">
-                    <div className="w-1.5 h-1.5 bg-forest rounded-full"></div>
-                    <span className="text-charcoal/80 text-sm">{feature}</span>
+                  <div key={idx} className="flex items-center space-x-3">
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                    <span className="text-green-50 text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
-
-              <motion.div
-                initial={{ width: 0 }}
-                animate={isVisible ? { width: '100%' } : {}}
-                transition={{ duration: 0.8, delay: 0.3 + 0.15 * index }}
-                className="h-1 bg-gradient-to-r from-forest to-green-400 rounded-full mt-6"
-              ></motion.div>
             </motion.div>
           ))}
         </div>
@@ -127,17 +122,17 @@ const Services = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="glass-card p-12 max-w-4xl mx-auto bg-gradient-to-br from-forest/5 to-green-400/5">
-            <h3 className="font-serif text-3xl font-bold text-charcoal mb-4">
+          <div className="p-12 max-w-4xl mx-auto rounded-[40px] border border-white/10 bg-white/5">
+            <h3 className="font-serif text-3xl font-bold text-white mb-4">
               ¿Listo para conocernos?
             </h3>
-            <p className="text-xl text-charcoal/70 mb-8">
+            <p className="text-xl text-green-100/70 mb-8">
               Agenda una visita personalizada y descubre por qué somos la mejor opción para tu hijo
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-forest to-green-600 text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-forest/30 transition-all duration-300"
+              className="bg-white text-forest px-10 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-300"
             >
               Reservar Tour Virtual
             </motion.button>
