@@ -26,7 +26,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="equipo" className="section-padding relative bg-gradient-to-b from-cream to-green-50/20">
+    <section id="equipo" className="section-padding relative bg-white">
       <div className="container-custom">
         <motion.div
           ref={ref}
