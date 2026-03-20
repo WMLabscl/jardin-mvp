@@ -6,28 +6,28 @@ const EnfoqueEducativo = () => {
 
   const sellos = [
     {
-      imagen: '/imagenes/sello-1.jpg',
+      imagen: '/imagenes/sello-1.png',
       icono: '💖',
       titulo: 'Bienestar Integral',
       subtitulo: 'Enfoque Afectivo',
       descripcion: 'Priorizamos el bienestar físico, emocional y social de los niños, promoviendo vínculos seguros y una educación basada en el respeto, el afecto y la contención emocional.'
     },
     {
-      imagen: '/imagenes/sello-2.jpg',
+      imagen: '/imagenes/sello-2.png',
       icono: '🧩',
       titulo: 'Educación Inclusiva',
       subtitulo: 'Atención Personalizada',
       descripcion: 'Reconocemos las características únicas de cada niño. Adaptamos las experiencias a sus ritmos de aprendizaje e intereses, promoviendo la equidad y el respeto por la diversidad.'
     },
     {
-      imagen: '/imagenes/sello-3.jpg',
+      imagen: '/imagenes/sello-3.png',
       icono: '🌱',
       titulo: 'Aprendizaje Vivencial',
       subtitulo: 'Contacto con la Naturaleza',
       descripcion: 'Fomentamos el aprendizaje activo mediante el juego y la experiencia. Utilizamos nuestro huerto, la granja educativa y áreas verdes para crear conciencia ambiental desde pequeños.'
     },
     {
-      imagen: '/imagenes/sello-4.jpg',
+      imagen: '/imagenes/sello-4.png',
       icono: '👨‍👩‍👧‍👦',
       titulo: 'Vínculo Familiar',
       subtitulo: 'Jardín y Comunidad',

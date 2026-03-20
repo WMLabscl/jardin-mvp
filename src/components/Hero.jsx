@@ -82,7 +82,7 @@ const Hero = () => {
             className="relative aspect-square overflow-hidden border-8 border-white shadow-2xl z-10"
           >
             <img 
-              src="/imagenes/foto_hero.jpg" 
+              src="/imagenes/foto_hero.png" 
               alt="Niños felices en El Castillo de los Bajitos" 
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />

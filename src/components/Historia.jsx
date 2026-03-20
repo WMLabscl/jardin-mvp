@@ -28,7 +28,7 @@ const Historia = () => {
               <div className="relative bg-cream rounded-t-full rounded-b-3xl overflow-hidden border-8 border-white shadow-xl z-10 aspect-[4/5]">
                 {/* Puedes usar una foto de la fachada o de la dueña/equipo aquí */}
                 <img 
-                  src="/imagenes/foto_hero.jpg" 
+                  src="/imagenes/fachada.png" 
                   alt="Nuestra Historia - El Castillo de los Bajitos" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />

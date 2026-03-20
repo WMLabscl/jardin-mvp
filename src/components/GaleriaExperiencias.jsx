@@ -58,7 +58,7 @@ const GaleriaExperiencias = () => {
               <div className="row-span-2 rounded-3xl overflow-hidden shadow-2xl group relative border-4 border-white/10">
                 <div className="absolute inset-0 bg-action/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
                 <div className="w-full h-full bg-blue-800/50 flex items-center justify-center"> {/* Placeholder si no hay foto */}
-                  <img src="/imagenes/galeria-1.jpg" alt="Niño sonriendo" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                  <img src="/imagenes/galeria-1.png" alt="Niño sonriendo" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20">
                   <p className="text-white font-bold text-xl drop-shadow-md">Aprendiendo con amor</p>
@@ -67,7 +67,7 @@ const GaleriaExperiencias = () => {
               
               <div className="rounded-3xl overflow-hidden shadow-2xl group relative border-4 border-white/10">
                 <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
-                <img src="/imagenes/galeria-2.jpg" alt="Día del mini chef" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/imagenes/galeria-2.png" alt="Día del mini chef" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent z-20">
                   <p className="text-white font-bold drop-shadow-md">Día del Mini Chef</p>
                 </div>
@@ -75,7 +75,7 @@ const GaleriaExperiencias = () => {
 
               <div className="rounded-3xl overflow-hidden shadow-2xl group relative border-4 border-white/10">
                 <div className="absolute inset-0 bg-action/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
-                <img src="/imagenes/galeria-3.jpg" alt="Juegos didácticos" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                <img src="/imagenes/galeria-3.png" alt="Juegos didácticos" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent z-20">
                   <p className="text-white font-bold drop-shadow-md">Explorando el mundo</p>
                 </div>
