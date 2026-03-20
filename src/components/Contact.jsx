@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-bold text-primary">Dirección</p>
-                  <p className="text-dark/70 text-sm">Colón 992, San Bernardo</p>
+                  <p className="text-dark/70 text-sm">Colón 299, San Bernardo</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

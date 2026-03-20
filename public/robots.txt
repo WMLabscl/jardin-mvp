@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kindervalley.edu/sitemap.xml
+Sitemap: https://castillodelosbajitos.cl/sitemap.xml
