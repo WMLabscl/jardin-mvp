@@ -24,10 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="section-padding relative overflow-hidden bg-gradient-to-br from-forest via-green-700 to-forest">
+    <section id="contacto" className="section-padding relative overflow-hidden bg-gradient-to-br from-[#1E56A0] via-[#1D4E89] to-[#1E56A0]">
       {/* Decoración de fondo */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-green-400/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-green-900/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-900/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
       
       <div className="container-custom relative z-10">
         {/* Header centrado */}
@@ -38,14 +38,14 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-6 py-3 rounded-full bg-white/10 text-green-200 font-semibold text-sm mb-6 backdrop-blur-md border border-white/20">
+          <span className="inline-block px-6 py-3 rounded-full bg-white/15 text-blue-100 font-semibold text-sm mb-6 backdrop-blur-md border border-white/20">
             Visítanos
           </span>
           <h2 className="font-serif text-5xl lg:text-6xl font-bold text-white mb-6">
-            Agenda tu <span className="text-green-300 italic">Visita</span>
+            Agenda tu <span className="text-blue-300 italic">Visita</span>
           </h2>
-          <p className="text-xl text-green-100/80 max-w-3xl mx-auto leading-relaxed">
-            Descubre cómo KinderValley puede ser el hogar perfecto para el desarrollo de tu hijo. Te esperamos para mostrarte nuestras instalaciones.
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            Nos alegra abrir las puertas de El Castillo de los Bajitos a cada familia que busca un espacio seguro, afectivo y lleno de aprendizajes para sus hijos e hijas.
           </p>
         </motion.div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
                 </svg>
               ),
               title: 'Email',
-              content: 'contacto@kindervalley.edu',
+              content: 'contacto@castillodelosbajitos.cl',
               subtitle: 'Respuesta en 24 hrs'
             },
             {
@@ -91,12 +91,12 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
               className="text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-green-400/20 text-green-300 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-400/20 text-blue-300 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 {item.icon}
               </div>
               <h3 className="font-bold text-white text-lg mb-2">{item.title}</h3>
-              <p className="text-green-100 font-medium mb-1">{item.content}</p>
-              <p className="text-green-200/60 text-sm">{item.subtitle}</p>
+              <p className="text-blue-100 font-medium mb-1">{item.content}</p>
+              <p className="text-blue-200 text-sm">{item.subtitle}</p>
             </motion.div>
           ))}
         </div>
@@ -110,7 +110,7 @@ const Contact = () => {
         >
           <div className="bg-white/10 backdrop-blur-lg p-8 lg:p-12 rounded-[40px] border border-white/20">
             <h3 className="font-serif text-3xl font-bold text-white mb-2 text-center">Envíanos un mensaje</h3>
-            <p className="text-green-100/70 text-center mb-8">Completa el formulario y nos pondremos en contacto contigo</p>
+            <p className="text-blue-100 text-center mb-8">Completa el formulario y nos pondremos en contacto contigo</p>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
@@ -125,7 +125,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-green-200/50 focus:border-green-300 focus:ring-2 focus:ring-green-300/20 outline-none transition-all backdrop-blur-sm"
+                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-green-200/50 focus:border-green-300 focus:ring-2 focus:ring-green-300/20 outline-none transition-all backdrop-blur-sm"
+                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
                     placeholder="+56 9 1234 5678"
                   />
                 </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-green-200/50 focus:border-green-300 focus:ring-2 focus:ring-green-300/20 outline-none transition-all backdrop-blur-sm"
+                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
                   placeholder="tu@email.com"
                 />
               </div>
@@ -174,7 +174,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="4"
-                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-green-200/50 focus:border-green-300 focus:ring-2 focus:ring-green-300/20 outline-none transition-all backdrop-blur-sm resize-none"
+                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm resize-none"
                   placeholder="Cuéntanos sobre tu consulta..."
                 ></textarea>
               </div>
@@ -183,7 +183,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-white text-forest px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-300"
+                className="w-full bg-action text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-700 shadow-lg transition-all duration-300"
               >
                 Enviar Mensaje
               </motion.button>

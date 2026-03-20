@@ -4,16 +4,17 @@ const StructuredData = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
+    const baseUrl = window.location.origin;
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "KinderValley",
-      "description": "Jardín Infantil donde la seguridad de estándar internacional se une al asombro del aprendizaje natural",
-      "url": "https://kindervalley.edu",
-      "logo": "https://kindervalley.edu/logo.png",
-      "image": "https://kindervalley.edu/hero-image.jpg",
+      "name": "Jardin Infantil y Sala Cuna El Castillo de los Bajitos",
+      "description": "Educacion parvularia de calidad, integral e inclusiva en un entorno seguro, afectivo y respetuoso.",
+      "url": baseUrl,
+      "logo": `${baseUrl}/imagenes/logo.png`,
+      "image": `${baseUrl}/imagenes/foto_hero.jpg`,
       "telephone": "+56223456789",
-      "email": "contacto@kindervalley.edu",
+      "email": "contacto@castillodelosbajitos.cl",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Principal 123",
@@ -40,44 +41,43 @@ const StructuredData = () => {
         }
       ],
       "sameAs": [
-        "https://facebook.com/kindervalley",
-        "https://instagram.com/kindervalley",
-        "https://linkedin.com/company/kindervalley"
+        "https://facebook.com/elcastillodelosbajitos",
+        "https://instagram.com/elcastillodelosbajitos"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicios KinderValley",
+        "name": "Proyecto Educativo El Castillo de los Bajitos",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Visibilidad Total - Cámaras HD",
-              "description": "Sistema de cámaras HD para monitoreo en tiempo real"
+              "name": "Bienestar integral y enfoque afectivo",
+              "description": "Promovemos vinculos seguros, buen trato y contencion emocional."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Protocolos Clínicos - Enfermería 24/7",
-              "description": "Atención médica profesional disponible las 24 horas"
+              "name": "Educacion personalizada e inclusiva",
+              "description": "Experiencias adaptadas a ritmos, intereses y necesidades de cada parvulo."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Desarrollo Natural - Metodología Orgánica",
-              "description": "Aprendizaje basado en metodologías naturales y orgánicas"
+              "name": "Aprendizaje vivencial y contacto con la naturaleza",
+              "description": "Juego, exploracion y entorno natural como base del aprendizaje."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Inglés Nativo",
-              "description": "Enseñanza de inglés con profesores nativos certificados"
+              "name": "Vinculacion familia - jardin - comunidad",
+              "description": "Trabajo colaborativo con familias y programa After School."
             }
           }
         ]

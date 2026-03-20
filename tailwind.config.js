@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#FDFCF6',
-        forest: '#2F855A',
-        charcoal: '#1A202C',
+        cream: '#FFF8E1',     // Fondo cálido del castillo
+        primary: '#1E56A0',   // Azul principal del logo
+        action: '#E63946',    // Rojo de los techos (Para botones y CTAs)
+        dark: '#333333',      // Gris oscuro para legibilidad de textos
+        accent: '#8D6E63',    // Marrón para detalles
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],

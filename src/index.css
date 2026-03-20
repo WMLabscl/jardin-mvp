@@ -91,7 +91,7 @@ body {
 
 /* Gradiente de texto */
 .text-gradient {
-  background: linear-gradient(135deg, #2F855A 0%, #48BB78 100%);
+  background: linear-gradient(135deg, #1E56A0 0%, #3B82F6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,16 +116,16 @@ body {
   border-radius: 32px;
   /* Sombras profundas para flotación */
   box-shadow: 
-    0 4px 6px -1px rgba(47, 133, 90, 0.05),
-    0 10px 15px -3px rgba(47, 133, 90, 0.1);
+    0 4px 6px -1px rgba(30, 86, 160, 0.05),
+    0 10px 15px -3px rgba(30, 86, 160, 0.1);
   transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 
-    0 10px 20px -5px rgba(47, 133, 90, 0.1),
-    0 25px 50px -12px rgba(47, 133, 90, 0.2);
+    0 10px 20px -5px rgba(30, 86, 160, 0.1),
+    0 25px 50px -12px rgba(30, 86, 160, 0.2);
   transform: translateY(-8px);
 }
 
@@ -144,12 +144,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2F855A;
+  background: #1E56A0;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #276749;
+  background: #1D4E89;
 }
 
 /* Utilidades adicionales */

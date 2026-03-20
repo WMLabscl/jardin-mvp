@@ -33,7 +33,7 @@ const Navbar = () => {
           <div
             className={`mx-auto flex items-center justify-between px-4 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-500 ${
               scrolled
-                ? 'bg-white/90 backdrop-blur-xl shadow-xl shadow-forest/5 max-w-4xl'
+                ? 'bg-white/90 backdrop-blur-xl shadow-xl shadow-primary/5 max-w-4xl'
                 : 'bg-white/60 backdrop-blur-lg max-w-6xl'
             }`}
           >
@@ -42,12 +42,17 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-forest to-green-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-lg">K</span>
+              <img
+                src="/imagenes/logo.png"
+                alt="Logo El Castillo de los Bajitos"
+                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              />
+              <div className="leading-tight">
+                <p className="hidden lg:block text-[10px] text-dark/70 font-medium">Jardin Infantil y Sala Cuna</p>
+                <span className="font-serif text-xs sm:text-sm lg:text-xl font-bold text-dark">
+                  El Castillo de los <span className="text-gradient">Bajitos</span>
+                </span>
               </div>
-              <span className="font-serif text-xl sm:text-2xl font-bold text-charcoal">
-                Kinder<span className="text-gradient">Valley</span>
-              </span>
             </motion.div>
 
             {/* Navigation Links - Desktop */}
@@ -61,10 +66,10 @@ const Navbar = () => {
                 >
                   <button
                     onClick={() => scrollToSection(item.toLowerCase())}
-                    className="font-medium text-charcoal/80 hover:text-forest transition-colors duration-300 relative group"
+                    className="font-medium text-dark/80 hover:text-primary transition-colors duration-300 relative group"
                   >
                     {item}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-forest transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                   </button>
                 </motion.li>
               ))}
@@ -75,13 +80,13 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('contacto')}
-              className="hidden md:block bg-gradient-to-r from-forest to-green-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-sm lg:text-base hover:shadow-xl hover:shadow-forest/20 transition-all duration-300"
+              className="hidden md:block bg-[#E63946] text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full font-semibold text-sm lg:text-base hover:bg-[#C62828] shadow-lg shadow-red-500/30 border border-red-300/30 transition-all duration-300"
             >
               Agenda tu Visita
             </motion.button>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-charcoal">
+            <button className="md:hidden text-dark">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
