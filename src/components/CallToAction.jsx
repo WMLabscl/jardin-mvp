@@ -21,7 +21,7 @@ const CallToAction = () => {
           {/* Contenido de Texto */}
           <div className="md:w-2/3 text-center md:text-left mb-8 md:mb-0 relative z-10">
             <div className="inline-block px-5 py-2 rounded-full bg-white text-action font-bold text-sm mb-6 shadow-sm">
-              ✨ ¡Matrículas Abiertas 2026!
+              ¡Matrículas Abiertas 2026!
             </div>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-cream mb-4 leading-tight">
               El segundo hogar <br className="hidden md:block"/>

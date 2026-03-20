@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CallToAction from './components/CallToAction';
+import Historia from './components/Historia';
 import EnfoqueEducativo from './components/EnfoqueEducativo';
 import Niveles from './components/Niveles';
 import GaleriaExperiencias from './components/GaleriaExperiencias';
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Hero />
         <CallToAction />
+        <Historia />
         <EnfoqueEducativo />
         <Niveles />
         <GaleriaExperiencias />
