@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
         sans: ['Manrope', 'sans-serif'],
+        caricatura: ['Chewy', 'cursive'],
       },
       animation: {
         'morph': 'morph 8s ease-in-out infinite',
