@@ -5,7 +5,7 @@ const Historia = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
 
   return (
-    <section id="nosotros" className="py-20 lg:py-32 bg-white relative overflow-hidden">
+    <section id="nosotros" className="pt-20 lg:pt-32 pb-10 lg:pb-16 bg-white relative overflow-hidden">
       {/* Decoración de fondo */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-50/50 rounded-l-full blur-3xl -z-10"></div>
       

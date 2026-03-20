@@ -36,10 +36,12 @@ const EnfoqueEducativo = () => {
   ];
 
   return (
-    <section id="enfoque" className="py-20 lg:py-32 relative bg-white">
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-cream rounded-full blur-3xl -translate-y-1/2 opacity-60"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-50 rounded-full blur-3xl translate-y-1/2 opacity-60"></div>
+    // CAMBIO RADICAL: Fondo crema con un gradiente marcado para romper la monotonía blanca
+    <section id="enfoque" className="py-20 lg:py-32 relative bg-gradient-to-b from-blue-50 to-cream border-y border-blue-100 overflow-hidden">
+      
+      {/* Elementos de fondo "Blobs" para darle textura e identidad infantil */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-action opacity-[0.03] rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary opacity-[0.04] rounded-full blur-3xl translate-y-1/4 -translate-x-1/4"></div>
 
       <div className="container-custom relative z-10">
         <motion.div
@@ -49,11 +51,11 @@ const EnfoqueEducativo = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-50 text-primary font-bold text-sm mb-4 border border-blue-100">
+          <span className="inline-block px-5 py-2 rounded-full bg-white text-primary font-bold text-sm mb-4 shadow-sm border border-blue-200">
             Nuestra Metodología
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Nuestros <span className="text-action">Sellos Educativos</span>
+            Nuestros <span className="text-action font-caricatura tracking-wider text-5xl lg:text-6xl">Sellos Educativos</span>
           </h2>
           <p className="text-lg text-dark/80 max-w-3xl mx-auto leading-relaxed">
             Creemos que la infancia es una etapa única e irrepetible. Por eso, acompañamos a cada niño y niña con dedicación, asegurando un desarrollo pleno en un entorno protector.
@@ -67,30 +69,29 @@ const EnfoqueEducativo = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(30,86,160,0.08)] border border-gray-100 transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
+              // Tarjetas con borde grueso y sombra azul para que "floten" sobre el nuevo fondo
+              className="group bg-white rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,86,160,0.15)] border-2 border-white transition-all duration-300 hover:-translate-y-3 flex flex-col h-full relative"
             >
-              {/* Imagen Superior */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden bg-gray-100">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
                 <img 
                   src={sello.imagen} 
                   alt={sello.titulo} 
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute -bottom-6 right-6 w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-lg z-20 transform -rotate-6 group-hover:rotate-0 transition-transform">
+                <div className="absolute -bottom-6 right-6 w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-xl z-20 transform -rotate-6 group-hover:rotate-0 transition-transform border-4 border-white">
                   {sello.icono}
                 </div>
               </div>
 
-              {/* Contenido */}
-              <div className="p-8 pt-10 flex-grow flex flex-col">
-                <p className="text-action font-bold text-sm uppercase tracking-wider mb-1">
+              <div className="p-8 pt-12 flex-grow flex flex-col relative">
+                <p className="text-action font-bold text-xs uppercase tracking-widest mb-2">
                   {sello.subtitulo}
                 </p>
-                <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 leading-snug">
                   {sello.titulo}
                 </h3>
-                <p className="text-dark/70 leading-relaxed text-sm flex-grow">
+                <p className="text-dark/70 leading-relaxed text-sm flex-grow font-medium">
                   {sello.descripcion}
                 </p>
               </div>

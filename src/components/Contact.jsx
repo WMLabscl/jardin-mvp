@@ -1,195 +1,138 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { useState } from 'react';
 
 const Contact = () => {
   const [ref, isVisible] = useScrollAnimation(0.1);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Formulario enviado:', formData);
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
-    <section id="contacto" className="section-padding relative overflow-hidden bg-gradient-to-br from-[#1E56A0] via-[#1D4E89] to-[#1E56A0]">
-      {/* Decoración de fondo */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-900/30 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
-      
+    <section id="contacto" className="py-20 lg:py-32 bg-cream relative overflow-hidden">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full blur-3xl -translate-y-1/2 opacity-60"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-red-100 rounded-full blur-3xl translate-y-1/4 opacity-60"></div>
+
       <div className="container-custom relative z-10">
-        {/* Header centrado */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="inline-block px-6 py-3 rounded-full bg-white/15 text-blue-100 font-semibold text-sm mb-6 backdrop-blur-md border border-white/20">
-            Visítanos
-          </span>
-          <h2 className="font-serif text-5xl lg:text-6xl font-bold text-white mb-6">
-            Agenda tu <span className="text-blue-300 italic">Visita</span>
-          </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Nos alegra abrir las puertas de El Castillo de los Bajitos a cada familia que busca un espacio seguro, afectivo y lleno de aprendizajes para sus hijos e hijas.
-          </p>
-        </motion.div>
-
-        {/* Tarjetas de información de contacto */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
-          {[
-            {
-              icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              ),
-              title: 'Teléfono',
-              content: '+56 2 2345 6789',
-              subtitle: 'Lun - Vie: 8:00 - 18:00'
-            },
-            {
-              icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              ),
-              title: 'Email',
-              content: 'contacto@castillodelosbajitos.cl',
-              subtitle: 'Respuesta en 24 hrs'
-            },
-            {
-              icon: (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              ),
-              title: 'Ubicación',
-              content: 'Av. Principal 123, Santiago',
-              subtitle: 'Estacionamiento disponible'
-            }
-          ].map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className="text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-            >
-              <div className="w-16 h-16 bg-blue-400/20 text-blue-300 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                {item.icon}
-              </div>
-              <h3 className="font-bold text-white text-lg mb-2">{item.title}</h3>
-              <p className="text-blue-100 font-medium mb-1">{item.content}</p>
-              <p className="text-blue-200 text-sm">{item.subtitle}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Formulario centrado */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="max-w-3xl mx-auto"
-        >
-          <div className="bg-white/10 backdrop-blur-lg p-8 lg:p-12 rounded-[40px] border border-white/20">
-            <h3 className="font-serif text-3xl font-bold text-white mb-2 text-center">Envíanos un mensaje</h3>
-            <p className="text-blue-100 text-center mb-8">Completa el formulario y nos pondremos en contacto contigo</p>
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+          
+          {/* Columna Izquierda: Mensaje de la Directora / Jardín */}
+          <motion.div 
+            ref={ref}
+            initial={{ opacity: 0, x: -50 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="lg:w-1/2"
+          >
+            <span className="inline-block px-4 py-2 rounded-full bg-white text-action font-bold text-sm mb-6 shadow-sm border border-red-100">
+              Hablemos
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+              ¡Ven a <span className="text-action font-caricatura text-5xl lg:text-6xl tracking-wide">Conocernos!</span>
+            </h2>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-8 rounded-[30px] shadow-sm border border-blue-50 mb-8 relative">
+              <div className="absolute -top-5 -left-3 text-4xl transform -rotate-12">💌</div>
+              <p className="text-dark/80 text-lg leading-relaxed font-medium mb-4">
+                "Sabemos que al buscar un jardín infantil surgen muchas preguntas y emociones. Confiar el cuidado y la educación de sus hijos es una decisión muy importante para cada familia."
+              </p>
+              <p className="text-dark/80 text-lg leading-relaxed font-medium mb-4">
+                "En <strong>El Castillo de los Bajitos</strong> queremos que se sientan tranquilos y seguros. Nuestro equipo educativo trabaja con vocación y cariño para acompañar a cada niño en su proceso de crecimiento."
+              </p>
+              <p className="text-primary font-bold text-lg">
+                Las puertas de nuestro jardín siempre estarán abiertas para recibirlos.
+              </p>
+            </div>
+
+            {/* Datos de contacto directos */}
+            <div className="flex flex-col sm:flex-row gap-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-blue-100 text-primary rounded-full flex items-center justify-center text-xl">
+                  📍
+                </div>
                 <div>
-                  <label htmlFor="name" className="block text-white font-semibold mb-2">
-                    Nombre Completo
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
-                    placeholder="Tu nombre"
+                  <p className="font-bold text-primary">Dirección</p>
+                  <p className="text-dark/70 text-sm">San Bernardo, Chile</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl">
+                  💬
+                </div>
+                <div>
+                  <p className="font-bold text-primary">WhatsApp</p>
+                  <p className="text-dark/70 text-sm">+56 9 XXXX XXXX</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Columna Derecha: Formulario Limpio */}
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="lg:w-1/2 w-full"
+          >
+            <div className="bg-white p-8 lg:p-10 rounded-[40px] shadow-[0_10px_40px_rgba(30,86,160,0.08)] border border-gray-100 relative">
+              <h3 className="text-2xl font-bold text-primary mb-6">Envíanos un mensaje</h3>
+              
+              <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                <div>
+                  <label className="block text-sm font-bold text-primary mb-2" htmlFor="nombre">Nombre del Apoderado</label>
+                  <input 
+                    type="text" 
+                    id="nombre"
+                    placeholder="Ej: María Pérez" 
+                    className="w-full px-5 py-4 bg-blue-50/50 border border-blue-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                   />
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-sm font-bold text-primary mb-2" htmlFor="telefono">Teléfono / WhatsApp</label>
+                    <input 
+                      type="tel" 
+                      id="telefono"
+                      placeholder="+56 9..." 
+                      className="w-full px-5 py-4 bg-blue-50/50 border border-blue-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-bold text-primary mb-2" htmlFor="edad">Edad del Párvulo</label>
+                    <select 
+                      id="edad"
+                      className="w-full px-5 py-4 bg-blue-50/50 border border-blue-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-dark/70"
+                    >
+                      <option value="">Selecciona...</option>
+                      <option value="sala-cuna">Sala Cuna (0 a 2 años)</option>
+                      <option value="medio">Niveles Medios (2 a 4 años)</option>
+                      <option value="transicion">Transición (4 a 5 años)</option>
+                      <option value="after-school">After School</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-white font-semibold mb-2">
-                    Teléfono
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
-                    placeholder="+56 9 1234 5678"
-                  />
+                  <label className="block text-sm font-bold text-primary mb-2" htmlFor="mensaje">¿En qué podemos ayudarte?</label>
+                  <textarea 
+                    id="mensaje"
+                    rows="4" 
+                    placeholder="Me gustaría agendar una visita..." 
+                    className="w-full px-5 py-4 bg-blue-50/50 border border-blue-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                  ></textarea>
                 </div>
-              </div>
 
-              <div>
-                <label htmlFor="email" className="block text-white font-semibold mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm"
-                  placeholder="tu@email.com"
-                />
-              </div>
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit" 
+                  className="w-full py-4 bg-action text-white font-bold text-lg rounded-full shadow-[0_8px_20px_rgba(230,57,70,0.3)] hover:bg-red-700 hover:shadow-[0_15px_30px_rgba(230,57,70,0.4)] transition-all duration-300 mt-2"
+                >
+                  Enviar Mensaje
+                </motion.button>
+              </form>
+            </div>
+          </motion.div>
 
-              <div>
-                <label htmlFor="message" className="block text-white font-semibold mb-2">
-                  Mensaje
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="4"
-                  className="w-full px-4 py-3 rounded-2xl border border-white/20 bg-white/10 text-white placeholder-blue-200/50 focus:border-blue-300 focus:ring-2 focus:ring-blue-300/20 outline-none transition-all backdrop-blur-sm resize-none"
-                  placeholder="Cuéntanos sobre tu consulta..."
-                ></textarea>
-              </div>
-
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
-                className="w-full bg-action text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-700 shadow-lg transition-all duration-300"
-              >
-                Enviar Mensaje
-              </motion.button>
-            </form>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
