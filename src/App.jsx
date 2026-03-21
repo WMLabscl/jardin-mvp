@@ -19,10 +19,10 @@ function App() {
       <main>
         <Hero />
         <CallToAction />
-        <Historia />
-        <EnfoqueEducativo />
         <Niveles />
+        <EnfoqueEducativo />
         <GaleriaExperiencias />
+        <Historia />
         <Valores />
         <Testimonios />
         <Contact />
