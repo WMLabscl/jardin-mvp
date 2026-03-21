@@ -19,9 +19,9 @@ function App() {
       <main>
         <Hero />
         <CallToAction />
+        <GaleriaExperiencias />
         <Niveles />
         <EnfoqueEducativo />
-        <GaleriaExperiencias />
         <Historia />
         <Valores />
         <Testimonios />
