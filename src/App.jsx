@@ -22,6 +22,7 @@ function App() {
         <CallToAction />
         <GaleriaExperiencias />
         <Niveles />
+        <Talleres />
         <EnfoqueEducativo />
         <Historia />
         <Valores />
