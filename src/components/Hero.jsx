@@ -99,7 +99,7 @@ const Hero = () => {
           className="mb-8"
         >
           <img 
-            src="/imagenes/logocastillo.png" 
+            src="/imagenes/logocastillo.webp" 
             alt="Logo El Castillo de los Bajitos" 
             className="w-44 sm:w-56 lg:w-80 drop-shadow-xl"
           />
