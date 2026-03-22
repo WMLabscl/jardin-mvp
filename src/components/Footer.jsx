@@ -35,10 +35,29 @@ const Footer = () => {
             
             {/* Redes Sociales */}
             <div className="flex space-x-4 pt-2">
-              <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#" aria-label="Facebook" className="w-12 h-12 bg-white/10 hover:bg-action rounded-full flex items-center justify-center transition-colors duration-300">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" /></svg>
+              <motion.a 
+                whileHover={{ scale: 1.1 }} 
+                whileTap={{ scale: 0.9 }} 
+                href="https://www.facebook.com/share/1AjRWSNAqE/?mibextid=wwXIfr" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook" 
+                className="w-12 h-12 bg-white/10 hover:bg-action rounded-full flex items-center justify-center transition-colors duration-300"
+              >
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
               </motion.a>
-              <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="#" aria-label="Instagram" className="w-12 h-12 bg-white/10 hover:bg-action rounded-full flex items-center justify-center transition-colors duration-300">
+              
+              <motion.a 
+                whileHover={{ scale: 1.1 }} 
+                whileTap={{ scale: 0.9 }} 
+                href="https://www.instagram.com/el_castillodelosbajitos?igsh=MXA2MGQ3YzhhdGd0dg==" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram" 
+                className="w-12 h-12 bg-white/10 hover:bg-action rounded-full flex items-center justify-center transition-colors duration-300"
+              >
                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0 1.5c-4.687 0-8.5 3.813-8.5 8.5s3.813 8.5 8.5 8.5 8.5-3.813 8.5-8.5-3.813-8.5-8.5-8.5zm0 4.35c2.288 0 4.15 1.862 4.15 4.15s-1.862 4.15-4.15 4.15-4.15-1.862-4.15-4.15 1.862-4.15 4.15-4.15zm0 1.5c-1.46 0-2.65 1.19-2.65 2.65s1.19 2.65 2.65 2.65 2.65-1.19 2.65-2.65-1.19-2.65-2.65-2.65zm3.8-3.4c.414 0 .75.336.75.75s-.336.75-.75.75-.75-.336-.75-.75.336-.75.75-.75z"/></svg>
               </motion.a>
             </div>
@@ -75,7 +94,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-xl">📞</span>
-                <span>+56 9 XXXX XXXX</span>
+                <span>+56 984346723</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-xl">✉️</span>

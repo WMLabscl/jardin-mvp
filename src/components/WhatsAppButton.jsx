@@ -1,14 +1,8 @@
 import { motion } from 'framer-motion';
 
 const WhatsAppButton = () => {
-  // 1. Aquí debes poner el número de teléfono del jardín
-  // Recuerda usar el código de país (56 para Chile) seguido del número, sin símbolos + ni espacios
-  const telefono = "56912345678"; // <-- CAMBIA ESTO POR EL NÚMERO REAL
-  
-  // 2. Este es el mensaje por defecto que aparecerá escrito cuando abran el chat
+  const telefono = "56984346723";
   const mensaje = "Hola, me gustaría recibir más información sobre las matrículas en El Castillo de los Bajitos. 🏰";
-  
-  // Generamos el link oficial de WhatsApp
   const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
   return (
