@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const CallToAction = () => {
   return (
-    <section className="py-12 lg:py-24 bg-cream relative px-4 z-20">
+    <section className="py-12 lg:py-12 bg-cream relative px-4 z-20">
       <div className="container-custom mx-auto max-w-6xl">
         
         <motion.div

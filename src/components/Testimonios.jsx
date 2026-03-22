@@ -32,7 +32,7 @@ const Testimonios = () => {
   ];
 
   return (
-    <section id="testimonios" className="py-20 lg:py-32 bg-white relative overflow-hidden border-y border-gray-100">
+    <section id="testimonios" className="py-20 lg:py-12 bg-white relative overflow-hidden border-y border-gray-100">
       
       {/* Elementos decorativos sutiles */}
       <div className="absolute top-10 left-10 text-5xl opacity-5 transform -rotate-12">💬</div>

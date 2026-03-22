@@ -67,7 +67,7 @@ const Talleres = () => {
 
   return (
     /* --- CAMBIO DE FONDO: Ahora es bg-cream con gradiente hacia azul --- */
-    <section id="talleres" className="py-20 lg:py-32 bg-[#FEFDFB] bg-gradient-to-b from-white via-cream/80 to-[#EAF5FF] relative overflow-hidden">
+    <section id="talleres" className="py-20 lg:py-12 bg-[#FEFDFB] bg-gradient-to-b from-white via-cream/80 to-[#EAF5FF] relative overflow-hidden">
       
       {/* Burbujas de color de fondo gigantescas para eliminar lo blanco */}
       <div className="absolute top-1/4 -left-40 w-[800px] h-[800px] bg-yellow-300 opacity-20 rounded-full blur-[140px] pointer-events-none"></div>

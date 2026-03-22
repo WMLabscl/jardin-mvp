@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 bg-[#F8FAFC] overflow-hidden flex flex-col items-center justify-start min-h-[90vh]">
+    <section id="inicio" className="relative pt-20 pb-16 lg:pt-36 lg:pb-24 bg-[#F8FAFC] overflow-hidden flex flex-col items-center justify-start min-h-[90vh]">
       
       {/* --- FONDO ANIMADO: Cielos y Nubes Esponjosas --- */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">

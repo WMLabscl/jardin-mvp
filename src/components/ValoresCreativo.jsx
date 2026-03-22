@@ -6,143 +6,127 @@ const ValoresCreativos = () => {
 
   const valores = [
     {
-      id: 1,
+      id: '01',
       titulo: 'Respeto',
       descripcion: 'Reconocimiento de la diversidad, dignidad y derechos de cada niño y niña.',
-      colorBase: 'bg-blue-200', 
-      colorIcono: 'text-blue-600',
-      forma: 'rounded-[30%_70%_70%_30%/30%_30%_70%_70%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      )
+      colorPunto: 'bg-blue-500',
+      colorTexto: 'text-blue-500'
     },
     {
-      id: 2,
+      id: '02',
       titulo: 'Empatía',
       descripcion: 'Comprensión y sensibilidad frente a las emociones, necesidades y experiencias de los niños.',
-      colorBase: 'bg-yellow-200', 
-      colorIcono: 'text-yellow-600',
-      forma: 'rounded-[60%_40%_30%_70%/60%_30%_70%_40%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      )
+      colorPunto: 'bg-yellow-500',
+      colorTexto: 'text-yellow-500'
     },
     {
-      id: 3,
+      id: '03',
       titulo: 'Responsabilidad',
       descripcion: 'Compromiso con el cuidado, la educación y el bienestar integral de los párvulos.',
-      colorBase: 'bg-red-200', 
-      colorIcono: 'text-action',
-      forma: 'rounded-[40%_60%_60%_40%/60%_60%_40%_40%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-        </svg>
-      )
+      colorPunto: 'bg-red-500',
+      colorTexto: 'text-action'
     },
     {
-      id: 4,
+      id: '04',
       titulo: 'Inclusión',
       descripcion: 'Valoración de las diferencias como una tremenda oportunidad de crecimiento.',
-      colorBase: 'bg-green-200', 
-      colorIcono: 'text-green-600',
-      forma: 'rounded-[30%_70%_40%_60%/60%_60%_40%_40%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-        </svg>
-      )
+      colorPunto: 'bg-green-500',
+      colorTexto: 'text-green-500'
     },
     {
-      id: 5,
+      id: '05',
       titulo: 'Colaboración',
       descripcion: 'Trabajo conjunto entre el equipo educativo, las familias y nuestra comunidad.',
-      colorBase: 'bg-purple-200', 
-      colorIcono: 'text-purple-600',
-      forma: 'rounded-[60%_40%_70%_30%/30%_30%_70%_70%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      )
+      colorPunto: 'bg-purple-500',
+      colorTexto: 'text-purple-500'
     },
     {
-      id: 6,
-      titulo: 'Medioambiente', // Acorté el título para que quepa mejor en móvil
+      id: '06',
+      titulo: 'Medioambiente',
       descripcion: 'Promoción del respeto y protección de nuestro medio ambiente desde pequeños.',
-      colorBase: 'bg-orange-200', 
-      colorIcono: 'text-orange-600',
-      forma: 'rounded-[30%_70%_70%_30%/40%_50%_60%_50%]',
-      icono: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 sm:w-10 sm:h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
+      colorPunto: 'bg-orange-500',
+      colorTexto: 'text-orange-500'
     }
   ];
 
   return (
-    <section id="valores" className="py-20 lg:py-32 bg-cream relative overflow-hidden px-4 sm:px-0">
-      <motion.div animate={{ rotate: [0, 360] }} transition={{ duration: 15, repeat: Infinity, ease: 'linear' }} className="absolute -top-10 left-10 text-4xl opacity-10">🎨</motion.div>
-      <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 3, repeat: Infinity }} className="absolute top-1/2 -right-10 text-4xl opacity-10">🌟</motion.div>
+    /* CAMBIO DE FONDO: Eliminamos el blanco. Ahora es un gradiente de azules pastel más oscuros y notorios */
+    <section id="valores" className="relative py-24 lg:py-36 bg-gradient-to-b from-[#D4E8FF] via-[#C0DEFF] to-[#A3CEFF] overflow-hidden">
+      
+      {/* OLA SUPERIOR (Ahora sí es 100% visible gracias al fondo azul) */}
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 rotate-180">
+        <svg className="relative block w-full h-[40px] md:h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0H0V95.8C59.71,118.08,130.83,119.24,196.33,109.1,238.82,102.51,281.3,81.1,321.39,56.44Z" fill="#ffffff"></path>
+        </svg>
+      </div>
 
-      <div className="container-custom relative z-10">
+      {/* FONDOS MÁGICOS SUTILES (Mantenidos para dar luz) */}
+      <div className="absolute top-40 left-10 w-[500px] h-[500px] bg-yellow-300 opacity-20 rounded-full blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-20 right-10 w-[600px] h-[600px] bg-purple-300 opacity-20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+      <div className="container-custom relative z-20 px-4 sm:px-6">
         
+        {/* --- CABECERA --- */}
         <motion.div 
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 lg:mb-24"
+          className="text-center mb-20 lg:mb-24"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-white text-action font-bold text-sm mb-4 border border-red-100 shadow-sm">
-            Nuestros Pilares
+          <span className="inline-block px-5 py-2 rounded-full bg-white text-action font-bold text-sm mb-6 shadow-sm border border-blue-200 uppercase tracking-widest">
+            Nuestra Filosofía
           </span>
-          {/* CAMBIO AQUÍ: Tamaños de letra adaptables y forzando salto de línea en móvil con block sm:inline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
-            Valores <span className="block sm:inline text-action font-caricatura tracking-wide text-4xl md:text-5xl lg:text-6xl mt-2 sm:mt-0">Institucionales</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight drop-shadow-sm">
+            Nuestros <span className="text-yellow-500 font-caricatura tracking-wide text-5xl md:text-6xl lg:text-7xl">Pilares</span>
           </h2>
-          <p className="text-base sm:text-lg text-dark/80 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-lg md:text-xl text-dark/80 max-w-2xl mx-auto leading-relaxed font-medium">
             Estos son los principios fundamentales que guían el día a día en nuestro jardín, formando niños íntegros, seguros y felices.
           </p>
         </motion.div>
 
-        {/* CAMBIO AQUÍ: grid-cols-1 en móvil, sm:grid-cols-2 en tablet, lg:grid-cols-3 en PC */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
+        {/* --- LISTA DE VALORES (A DOS COLUMNAS) --- */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           {valores.map((valor, index) => (
             <motion.div
               key={valor.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isVisible ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1, ease: 'easeOut' }}
-              className={`
-                ${valor.colorBase} ${valor.forma} 
-                p-8 md:p-10 flex flex-col items-center text-center 
-                shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_15px_35px_rgba(30,86,160,0.1)] 
-                border-4 border-white transform transition-all duration-300 
-                hover:-translate-y-2 hover:scale-105 group
-                ${/* Desfase vertical solo en pantallas grandes para mantener el efecto mosaico sin romper el móvil */ ''}
-                ${index === 1 || index === 4 ? 'lg:translate-y-12' : ''} 
-              `}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+              animate={isVisible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: Math.floor(index / 2) * 0.15, ease: "easeOut" }}
+              /* Tarjetas blancas que ahora hacen un contraste espectacular con el azul */
+              className="group relative bg-white/85 backdrop-blur-md rounded-[30px] p-6 lg:p-8 border-2 border-white shadow-[0_15px_35px_rgba(30,86,160,0.1)] hover:shadow-[0_25px_50px_rgba(30,86,160,0.2)] hover:border-blue-200 transition-all duration-300 flex items-start gap-5 lg:gap-8 overflow-hidden"
             >
-              <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white flex items-center justify-center shadow-inner mb-6 sm:mb-8 ${valor.colorIcono} group-hover:rotate-6 transition-transform duration-300`}>
-                {valor.icono}
+              {/* Barra de color lateral dinámica */}
+              <div className={`absolute left-0 top-0 bottom-0 w-2 ${valor.colorPunto} opacity-50 group-hover:opacity-100 transition-opacity`}></div>
+
+              {/* Número Gigante Decorativo */}
+              <div className={`shrink-0 text-5xl md:text-6xl lg:text-7xl font-caricatura opacity-30 group-hover:opacity-60 transition-opacity duration-300 select-none ${valor.colorTexto} pl-2 pt-1`}>
+                {valor.id}
               </div>
-              <h3 className="font-caricatura text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4">
-                {valor.titulo}
-              </h3>
-              <p className="text-dark/80 leading-relaxed font-medium text-sm sm:text-base flex-grow">
-                {valor.descripcion}
-              </p>
+
+              {/* Textos */}
+              <div className="flex-grow">
+                <h3 className={`text-2xl lg:text-3xl font-bold mb-3 ${valor.colorTexto}`}>
+                  {valor.titulo}
+                </h3>
+                <p className="text-dark/80 font-medium text-sm md:text-base leading-relaxed">
+                  {valor.descripcion}
+                </p>
+              </div>
+
             </motion.div>
           ))}
         </div>
 
       </div>
+
+      {/* OLA INFERIOR */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+        <svg className="relative block w-full h-[40px] md:h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0H0V95.8C59.71,118.08,130.83,119.24,196.33,109.1,238.82,102.51,281.3,81.1,321.39,56.44Z" fill="#ffffff"></path>
+        </svg>
+      </div>
+
     </section>
   );
 };

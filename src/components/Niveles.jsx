@@ -68,7 +68,7 @@ const Niveles = () => {
   ];
 
   return (
-    <section id="niveles" className="py-20 lg:py-32 bg-white relative border-t border-gray-100 overflow-hidden">
+    <section id="niveles" className="py-20 lg:py-12 bg-white relative border-t border-gray-100 overflow-hidden">
       
       {/* Detalle de fondo sutil usando SVG en lugar de letras sueltas */}
       <div className="absolute top-20 left-10 opacity-5 transform -rotate-12 pointer-events-none">
