@@ -33,7 +33,7 @@ const Historia = () => {
   return (
     <section 
       id="historia" 
-      className="relative py-24 lg:py-32 bg-[#FEFDFB] bg-gradient-to-br from-[#FEFDFB] via-white to-[#EAF5FF] overflow-hidden border-t border-gray-100"
+      className="relative py-24 lg:py-32 bg-[#FEFDFB] bg-gradient-to-br from-[#FEFDFB] via-white to-[#EAF5FF] overflow-hidden"
     >
       {/* Burbujas de color decorativas de fondo */}
       <div className="absolute top-20 -left-32 w-80 h-80 bg-primary opacity-10 rounded-full blur-[80px] pointer-events-none"></div>

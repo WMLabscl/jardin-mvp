@@ -7,15 +7,16 @@
 
 Landing page premium y orientada a conversiones desarrollada para el jardín infantil y sala cuna **"El Castillo de los Bajitos"** (San Bernardo, Chile). 
 
-Este proyecto no es solo un sitio web informativo, sino una herramienta de marketing estructurada como un **embudo de ventas (Sales Funnel)**, diseñada para transmitir confianza, seguridad y profesionalismo a los padres, maximizando la captación de matrículas.
+Este proyecto funciona como una herramienta de marketing estructurada bajo un modelo de **embudo de ventas (Sales Funnel)**. Está diseñada para transmitir confianza, seguridad y profesionalismo a los apoderados, maximizando la captación de matrículas a través de un recorrido visual estratégico.
 
 ## Características Principales
 
-* **Arquitectura UX Estratégica:** El orden de los componentes está diseñado para responder las dudas del usuario paso a paso (Hero -> CTA -> Niveles -> Talleres Especiales -> Pilares -> Historia -> Contacto).
-* **Animaciones Avanzadas:** Uso intensivo de `framer-motion` para animaciones de scroll (`whileInView`), parallax, elementos SVG flotantes y micro-interacciones (hover states).
-* **Diseño Moderno e Infantil:** Implementación de tendencias UI como *Glassmorphism* (tarjetas de cristal difuminado), formas orgánicas (SVG Waves) y paletas de colores pasteles contrastantes.
+* **Arquitectura UX Estratégica:** El orden de los componentes guía al usuario desde el impacto emocional hasta la conversión directa, respondiendo sus dudas de forma secuencial.
+* **Canales de Conversión Activos:** Integración de un botón flotante de WhatsApp animado para contacto inmediato y llamados a la acción (CTA) orientados a reseñas en Google Maps para mejorar el SEO local.
+* **Animaciones Avanzadas:** Uso intensivo de `framer-motion` para animaciones de scroll (`whileInView`), efectos 3D (Pop-out), elementos SVG flotantes y micro-interacciones.
+* **Diseño Moderno e Infantil:** Implementación de tendencias UI como *Glassmorphism* (tarjetas translúcidas), formas orgánicas (SVG Waves) y paletas de colores cálidos y pastel de alto contraste.
 * **100% Responsivo:** Adaptación perfecta a dispositivos móviles, tablets y desktop mediante *Mobile-First Design* con Tailwind CSS.
-* **Rendimiento Óptimo:** Construido sobre Vite para tiempos de carga ultrarrápidos y una experiencia de desarrollo fluida.
+* **Rendimiento y SEO:** Construido sobre Vite para tiempos de carga ultrarrápidos, e incluye el componente `StructuredData` para la optimización de motores de búsqueda.
 
 ## Tecnologías Utilizadas
 
@@ -23,37 +24,20 @@ Este proyecto no es solo un sitio web informativo, sino una herramienta de marke
 * **Build Tool:** [Vite](https://vitejs.dev/)
 * **Estilos:** [Tailwind CSS 3](https://tailwindcss.com/)
 * **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
-* **Iconos y Vectores:** SVG nativos optimizados.
+* **Iconos y Vectores:** SVG nativos optimizados e integrados en código para cero latencia.
 
 ## Estructura del Proyecto (Embudo de Conversión)
 
-El flujo de la aplicación se encuentra en `src/App.jsx` y se divide en los siguientes componentes modulares:
+El flujo de la aplicación se orquesta en `src/App.jsx` mediante la siguiente secuencia modular:
 
-1.  `Hero.jsx`: Primer impacto visual con propuesta de valor.
-2.  `CallToAction.jsx`: Sentido de urgencia (Matrículas abiertas).
-3.  `Niveles.jsx`: Filtro de utilidad (Edades y salas).
-4.  `Talleres.jsx`: Diferenciador competitivo (Huerto, Cocina, Arte + App de Cámaras).
-5.  `ValoresCreativo.jsx` / `EnfoqueEducativo.jsx`: Autoridad pedagógica.
-6.  `Historia.jsx` & `Testimonios.jsx`: Prueba social y humanización de la marca.
-7.  `Contact.jsx` & `Footer.jsx`: Cierre y acción.
-
-## Instalación y Uso
-
-Para correr este proyecto en tu entorno local, sigue estos pasos:
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone [https://github.com/wmlabscl/jardin-mvp.git](https://github.com/wmlabscl/jardin-mvp.git)
-   cd jardin-mvp
-Instalar dependencias
-
-Bash
-npm install
-Iniciar el servidor de desarrollo
-
-Bash
-npm run dev
-Construir para producción
-
-Bash
-npm run build
+1.  **`Hero.jsx`**: Primer impacto visual con la propuesta de valor principal.
+2.  **`CallToAction.jsx`**: Generación de sentido de urgencia (estado de matrículas).
+3.  **`Niveles.jsx`**: Filtro de utilidad (rangos de edad y programas).
+4.  **`Talleres.jsx`**: Diferenciadores competitivos de la institución.
+5.  **`GaleriaExperiencias.jsx`**: Transparencia visual de las instalaciones y el día a día.
+6.  **`EnfoqueEducativo.jsx`**: Sellos pedagógicos y metodología.
+7.  **`Historia.jsx`**: Origen del proyecto para humanizar la marca.
+8.  **`ValoresCreativo.jsx`**: Pilares institucionales y filosofía.
+9.  **`Testimonios.jsx`**: Prueba social y validación de otros apoderados.
+10. **`Contact.jsx`**: Formulario de contacto y mapa de ubicación.
+11. **`WhatsAppButton.jsx`**: Componente global persistente para contacto rápido.

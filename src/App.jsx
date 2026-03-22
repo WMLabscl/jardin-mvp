@@ -11,6 +11,7 @@ import Testimonios from './components/Testimonios';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import StructuredData from './components/StructuredData';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
         <Contact />
       </main>
       <Footer />
+
+      <WhatsAppButton />
     </>
   );
 }
