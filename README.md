@@ -1,83 +1,59 @@
-# KinderValley - Landing Page Premium
+# El Castillo de los Bajitos - Landing Page MVP
 
-Landing page de alto nivel para KinderValley, jardín infantil de lujo con estándar internacional.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BA5?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-## Stack Tecnológico
+Landing page premium y orientada a conversiones desarrollada para el jardín infantil y sala cuna **"El Castillo de los Bajitos"** (San Bernardo, Chile). 
 
-- React 19.2.0
-- Vite 7.2.4
-- Tailwind CSS 3.4.1
-- Framer Motion 12.24.12
-- PostCSS + Autoprefixer
+Este proyecto no es solo un sitio web informativo, sino una herramienta de marketing estructurada como un **embudo de ventas (Sales Funnel)**, diseñada para transmitir confianza, seguridad y profesionalismo a los padres, maximizando la captación de matrículas.
 
-## Características
+## Características Principales
 
-- Diseño "Organic & Premium" con formas fluidas
-- Animaciones CSS personalizadas (morph, noise overlay)
-- Glassmorphism en tarjetas
-- Scroll animations con Intersection Observer
-- Marquee infinito de servicios
-- SEO optimizado con Structured Data
-- Responsive design
+* **Arquitectura UX Estratégica:** El orden de los componentes está diseñado para responder las dudas del usuario paso a paso (Hero -> CTA -> Niveles -> Talleres Especiales -> Pilares -> Historia -> Contacto).
+* **Animaciones Avanzadas:** Uso intensivo de `framer-motion` para animaciones de scroll (`whileInView`), parallax, elementos SVG flotantes y micro-interacciones (hover states).
+* **Diseño Moderno e Infantil:** Implementación de tendencias UI como *Glassmorphism* (tarjetas de cristal difuminado), formas orgánicas (SVG Waves) y paletas de colores pasteles contrastantes.
+* **100% Responsivo:** Adaptación perfecta a dispositivos móviles, tablets y desktop mediante *Mobile-First Design* con Tailwind CSS.
+* **Rendimiento Óptimo:** Construido sobre Vite para tiempos de carga ultrarrápidos y una experiencia de desarrollo fluida.
 
-## Instalación
+## Tecnologías Utilizadas
 
-```bash
+* **Framework:** [React 18](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Estilos:** [Tailwind CSS 3](https://tailwindcss.com/)
+* **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
+* **Iconos y Vectores:** SVG nativos optimizados.
+
+## Estructura del Proyecto (Embudo de Conversión)
+
+El flujo de la aplicación se encuentra en `src/App.jsx` y se divide en los siguientes componentes modulares:
+
+1.  `Hero.jsx`: Primer impacto visual con propuesta de valor.
+2.  `CallToAction.jsx`: Sentido de urgencia (Matrículas abiertas).
+3.  `Niveles.jsx`: Filtro de utilidad (Edades y salas).
+4.  `Talleres.jsx`: Diferenciador competitivo (Huerto, Cocina, Arte + App de Cámaras).
+5.  `ValoresCreativo.jsx` / `EnfoqueEducativo.jsx`: Autoridad pedagógica.
+6.  `Historia.jsx` & `Testimonios.jsx`: Prueba social y humanización de la marca.
+7.  `Contact.jsx` & `Footer.jsx`: Cierre y acción.
+
+## Instalación y Uso
+
+Para correr este proyecto en tu entorno local, sigue estos pasos:
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone [https://github.com/wmlabscl/jardin-mvp.git](https://github.com/wmlabscl/jardin-mvp.git)
+   cd jardin-mvp
+Instalar dependencias
+
+Bash
 npm install
-```
+Iniciar el servidor de desarrollo
 
-## Desarrollo
-
-```bash
+Bash
 npm run dev
-```
+Construir para producción
 
-El proyecto se ejecutará en `http://localhost:3000`
-
-## Build
-
-```bash
+Bash
 npm run build
-```
-
-## Vista Previa
-
-```bash
-npm run preview
-```
-
-## Estructura del Proyecto
-
-```
-├── public/
-│   ├── robots.txt
-│   ├── sitemap.xml
-│   └── images/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Services.jsx
-│   │   ├── Team.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Modal.jsx
-│   │   └── StructuredData.jsx
-│   ├── hooks/
-│   │   └── useScrollAnimation.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-└── ...config files
-```
-
-## Colores Brand
-
-- Cream: #FDFCF6 (Background)
-- Forest Green: #2F855A (Primary)
-- Deep Charcoal: #1A202C (Text)
-
-## Tipografía
-
-- Títulos: Playfair Display (Serif)
-- Cuerpo: Manrope (Sans-serif)
